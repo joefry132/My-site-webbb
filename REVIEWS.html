@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Reviews - Tech World</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Tech World</h1>
+            <p>Your one-stop shop for all things tech!</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+
+        <!-- Review 1 -->
+        <div class="review">
+            <div class="review-header">
+                <h3>John Doe</h3>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span> <!-- 5 stars rating -->
+                </div>
+            </div>
+            <p>"I recently purchased a gaming PC from Tech World, and it was an excellent experience! The staff was knowledgeable and helped me choose the perfect setup for my needs. Highly recommend!"</p>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review">
+            <div class="review-header">
+                <h3>Jane Smith</h3>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐</span> <!-- 4 stars rating -->
+                </div>
+            </div>
+            <p>"Great service and fast delivery. I bought a laptop, and it was delivered to me within two days. The laptop works perfectly, but I had some minor setup questions that weren't fully addressed."</p>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review">
+            <div class="review-header">
+                <h3>Mike Johnson</h3>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span> <!-- 5 stars rating -->
+                </div>
+            </div>
+            <p>"The repair service at Tech World is fantastic. My laptop had a broken screen, and they fixed it quickly and at a reasonable price. I'll definitely come back for future repairs."</p>
+        </div>
+
+        <!-- Review Form -->
+        <h3>Leave a Review</h3>
+        <form action="/submit-review" method="post">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="rating">Rating:</label><br>
+            <select id="rating" name="rating" required>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="1">⭐</option>
+            </select><br><br>
+
+            <label for="review">Your Review:</label><br>
+            <textarea id="review" name="review" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Submit Review">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Tech World. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
